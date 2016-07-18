@@ -327,7 +327,7 @@
     line.exit().transition().remove();
 
     var meanLabel = chart.svg.selectAll("text.meanlabel")
-      .data(meanData);
+      .data([meanVal]);
       
     meanLabel.enter()
       .append("text")
